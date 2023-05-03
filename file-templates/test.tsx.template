@@ -1,0 +1,10 @@
+import React from 'react';
+import { render, screen } from '@testing-library/react';
+import { __COMPONENT_NAME__ } from './__COMPONENT_NAME__';
+
+describe('__COMPONENT_NAME__', () => {
+  it('renders without crashing', () => {
+    render(<__COMPONENT_NAME__>Test</__COMPONENT_NAME__>);
+    expect(screen.getByText(/Test/i, {})).toBeInTheDocument();
+  });
+});

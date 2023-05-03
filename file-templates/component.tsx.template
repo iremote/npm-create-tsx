@@ -1,0 +1,12 @@
+import React from 'react';
+import { __COMPONENT_NAME__Props } from './types';
+
+function __COMPONENT_NAME__({ children }: __COMPONENT_NAME__Props) {
+  return (
+    <div>
+      {children}
+    </div>
+  );
+}
+
+export { __COMPONENT_NAME__ };

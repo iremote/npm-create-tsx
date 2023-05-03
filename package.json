@@ -1,12 +1,34 @@
 {
-  "name": "npm-create-tsx",
-  "version": "1.0.0",
-  "description": "npm module to simplify react component files creation using templates",
-  "main": "index.js",
+  "name": "create-tsx",
+  "version": "0.1.0",
+  "description": "Script to create typescript component for React.",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc && copyfiles -u 1 file-templates/**/* dist/file-templates",
+    "test": "echo 'Error: no test specified' && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "files": [
+    "dist/"
+  ],
+  "bin": {
+    "create-tsx": "dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iremote/npm-create-tsx.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=14"
+  },
+  "author": "iRemote, Inc.",
+  "bugs": {
+    "url": "https://github.com/iremote/npm-create-tsx/issues"
+  },
+  "homepage": "https://github.com/iremote/npm-create-tsx#readme",
+  "devDependencies": {
+    "@types/node": "^18.16.3",
+    "copyfiles": "^2.4.1",
+    "typescript": "^5.0.4"
+  }
 }

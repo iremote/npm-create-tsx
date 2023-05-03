@@ -1,0 +1,14 @@
+import React from 'react';
+import { Story, Meta } from '@storybook/react';
+import { __COMPONENT_NAME__, __COMPONENT_NAME__Props } from './';
+
+export default {
+  component: __COMPONENT_NAME__,
+} as Meta;
+
+const Template: Story<__COMPONENT_NAME__Props> = (args) => <__COMPONENT_NAME__ {...args} />;
+
+export const Default = Template.bind({});
+Default.args = {
+  children: 'Hello, __COMPONENT_NAME__!',
+};
