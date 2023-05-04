@@ -1,6 +1,6 @@
 {
   "name": "create-tsx",
-  "version": "1.0.10",
+  "version": "0.0.1",
   "description": "Script to create typescript component for React.",
   "main": "dist/index.js",
   "scripts": {
