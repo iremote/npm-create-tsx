@@ -1,5 +1,5 @@
 {
-  "name": "create-tsx",
+  "name": "create-tsx-components",
   "version": "1.1.0",
   "description": "Script to create typescript component for React.",
   "main": "dist/index.js",
@@ -11,7 +11,8 @@
     "dist/"
   ],
   "bin": {
-    "create-tsx": "dist/index.js"
+    "ctsc": "dist/index.js",
+    "create-tsx-components": "dist/index.js"
   },
   "repository": {
     "type": "git",
