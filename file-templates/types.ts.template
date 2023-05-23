@@ -1,5 +1,1 @@
-import { ReactNode } from 'react';
-
-export interface __COMPONENT_NAME__Props {
-  children?: ReactNode;
-}
+// Add types that need to be exported outside of this module.

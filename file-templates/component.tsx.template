@@ -1,10 +1,15 @@
-import React from 'react';
-import { __COMPONENT_NAME__Props } from './types';
+import { ReactNode } from 'react';
+import { Locales, useLocales } from "./useLocales";
+
+export interface __COMPONENT_NAME__Props {
+  children?: ReactNode;
+}
 
 export function __COMPONENT_NAME__({ children }: __COMPONENT_NAME__Props) {
+  const { locales } : { locales: Locales }= useLocales();
   return (
     <div>
-      {children}
+      {locales.demo || ""} {children}
     </div>
   );
 }

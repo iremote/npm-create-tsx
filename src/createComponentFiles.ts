@@ -30,6 +30,7 @@ export function createComponentFiles() {
 		{ template: "component.tsx.template", output: `${componentName}.tsx` },
 		{ template: "test.tsx.template", output: `${componentName}.test.tsx` },
 		{ template: "storybook.tsx.template", output: `${componentName}.stories.tsx` },
+		{ template: "useLocales.ts.template", output: "useLocales.ts" },
 		{ template: "index.ts.template", output: "index.ts" },
 		{ template: "types.ts.template", output: "types.ts" },
 	];
