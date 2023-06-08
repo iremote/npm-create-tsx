@@ -5,16 +5,12 @@ export interface Locales {
   demo: string;
 }
 
-export function useLocales(): { locales: Locales } {
-
+export function useLocales(): Locales {
   const intl = useIntl();
-
-  const locales: Locales = useMemo(() => {
+  return useMemo(() => {
     const demo = intl.formatMessage({ id: "path.to.demo" });
     return {
       demo
     };
   }, [intl]);
-
-  return { locales };
 }

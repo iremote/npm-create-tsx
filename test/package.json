@@ -1,20 +1,17 @@
 {
-  "name": "test",
-  "version": "1.0.0",
-  "description": "Test module to verify the parent npm.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo 'Error: no test specified' && exit 1",
-    "demo": "npx create-tsx src/.tmp/Demo"
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "module": "CommonJS",
+    "target": "ES2018",
+    "strict": true,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "lib": ["es2018", "dom"],
+    "types": ["node"],
+    "outDir": "dist"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@mui/material": "^5.13.2",
-    "@storybook/react": "^7.0.17",
-    "@testing-library/react": "^14.0.0",
-    "@types/jest": "^29.5.1",
-    "react-intl": "^6.4.2"
-  }
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules", "dist"]
 }
