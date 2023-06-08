@@ -1,4 +1,3 @@
-import React from 'react';
 import { Story, Meta } from '@storybook/react';
 import { __COMPONENT_NAME__, __COMPONENT_NAME__Props } from './';
 
