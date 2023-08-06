@@ -7,7 +7,7 @@ export interface __COMPONENT_NAME__Props {
 }
 
 function __COMPONENT_NAME__({ children }: __COMPONENT_NAME__Props) {
-  const { locales } : { locales: Locales }= useLocales();
+  const locales : Locales = useLocales();
   return (
     <DemoBox>
       {locales.demo || ""} {children}
