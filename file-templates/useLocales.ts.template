@@ -8,9 +8,8 @@ export interface Locales {
 export function useLocales(): Locales {
   const intl = useIntl();
   return useMemo(() => {
-    const demo = intl.formatMessage({ id: "path.to.demo" });
     return {
-      demo
+      demo: intl.formatMessage({ id: "path.to.demo" }),
     };
   }, [intl]);
 }
