@@ -32,8 +32,8 @@
   },
   "homepage": "https://github.com/iremote/npm-create-tsx#readme",
   "devDependencies": {
-    "@types/node": "^18.16.16",
+    "@types/node": "^18.17.3",
     "copyfiles": "^2.4.1",
-    "typescript": "^5.1.3"
+    "typescript": "^5"
   }
 }
