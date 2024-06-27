@@ -4,7 +4,7 @@
   "description": "Script to create typescript component for React.",
   "main": "dist/index.js",
   "scripts": {
-    "clean": "rm -rf dist node_modules yarn.lock",
+    "clean": "rm -rf dist node_modules yarn.lock && yarn install",
     "prebuild": "rm -rf dist",
     "build": "tsc && copyfiles -u 1 file-templates/**/* dist/file-templates",
     "prepublishOnly": "npm run build",
