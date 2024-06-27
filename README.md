@@ -4,7 +4,8 @@ npm module to simplify react component files creation using templates
 
 ## building module
 
-1. `npm run build`
+1. `yarn install`
+2. `yarn build`
 
 ## testing module
 
@@ -17,7 +18,7 @@ npm module to simplify react component files creation using templates
 1. `npm login`
 2. `npm publish --access public`
 
-## un-publishing from npm
+## removing from npm
 
 1. `npm unpublish --force`
 2. `npm unpublish --force --registry https://registry.npmjs.org/`

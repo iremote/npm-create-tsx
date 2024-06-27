@@ -1,21 +1,26 @@
 {
-  "name": "test",
+  "name": "npm-test",
   "version": "1.0.0",
   "description": "Test module to verify the parent npm.",
   "main": "index.js",
   "scripts": {
-    "clean": "rm -rf dist node_modules package-lock.json",
+    "clean": "rm -rf dist yarn.lock && yarn install && npm link ../",
     "test": "echo 'Error: no test specified' && exit 1",
     "demo": "npx create-tsx src/.tmp/Demo"
   },
   "keywords": [],
   "author": "iRemote, Inc.",
   "license": "ISC",
+  "dependencies": {
+    "@mui/material": "^5.15.20",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-intl": "^6.6.8"
+  },
   "devDependencies": {
-    "@mui/material": "^5.13.4",
-    "@storybook/react": "^7.0.20",
-    "@testing-library/react": "^14.0.0",
-    "@types/jest": "^29.5.2",
-    "react-intl": "^6.4.3"
+    "@storybook/react": "^8.1.11",
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/dom": "^10.2.0",
+    "@types/jest": "^29.5.12"
   }
 }

@@ -1,10 +1,10 @@
 {
   "name": "create-tsx",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Script to create typescript component for React.",
   "main": "dist/index.js",
   "scripts": {
-    "clean": "rm -rf dist node_modules package-lock.json",
+    "clean": "rm -rf dist node_modules yarn.lock && yarn install",
     "prebuild": "rm -rf dist",
     "build": "tsc && copyfiles -u 1 file-templates/**/* dist/file-templates",
     "prepublishOnly": "npm run build",
@@ -32,8 +32,15 @@
   },
   "homepage": "https://github.com/iremote/npm-create-tsx#readme",
   "devDependencies": {
-    "@types/node": "^18.17.3",
+    "@types/node": "^18.19.39",
     "copyfiles": "^2.4.1",
-    "typescript": "^5"
+    "typescript": "^5.5.2"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0 || ^17.0.1 || ^18.0.0",
+    "react-dom": "^16.0.0 || ^17.0.1 || ^18.0.0",
+    "@mui/material": "^5.0.0",
+    "@testing-library/dom": "^10.0.0",
+    "@storybook/react": "^8.0.0"
   }
 }
