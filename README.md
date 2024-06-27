@@ -4,7 +4,8 @@ npm module to simplify react component files creation using templates
 
 ## building module
 
-1. `npm run build`
+1. `yarn install`
+2. `yarn build`
 
 ## testing module
 
