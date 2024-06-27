@@ -4,8 +4,8 @@ import path from "path";
 /**
  * Copyright (c) iRemote, Inc.
  *
- * Creates new component and its infrastructure files (tests, storybook, etc.).
- * Uses file-template folder as a source of templates.
+ * Creates new component and its infrastructure files (tests, storybook, etc.) and
+ * uses file-template folder as a source of templates.
  * You may use `--dry-run` flag to see what files will be created without actually creating them.
  *
  * @author Ramesh Doddi.
@@ -30,10 +30,8 @@ export function createComponentFiles() {
 		{ template: "component.tsx.template", output: `${componentName}.tsx` },
 		{ template: "test.tsx.template", output: `${componentName}.test.tsx` },
 		{ template: "storybook.tsx.template", output: `${componentName}.stories.tsx` },
-		{ template: "styles.tsx.template", output: `${componentName}.styles.tsx` },
 		{ template: "useLocales.ts.template", output: "useLocales.ts" },
 		{ template: "index.ts.template", output: "index.ts" },
-		{ template: "types.ts.template", output: "types.ts" },
 	];
 
 	const replaceTokens = (content: string, tokens: Record<string, string>): string =>

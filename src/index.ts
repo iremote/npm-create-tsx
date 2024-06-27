@@ -12,7 +12,7 @@
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //
 // create-tsx is installed globally on people's computers. This means
-// that it is extremely difficult to have them upgrade the version and
+// that it is extremely challenging to have them upgrade the version, and
 // because there's only one global version installed, it is very prone to
 // breaking changes.
 //
