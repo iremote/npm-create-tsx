@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 import Box from '@mui/material/Box';
 import styled from '@mui/system/styled';
 
@@ -6,7 +6,7 @@ export interface __COMPONENT_NAME__Props {
   children?: ReactNode;
 }
 
-function __COMPONENT_NAME__({ children }: __COMPONENT_NAME__Props) {
+export const __COMPONENT_NAME__: React.FC<__COMPONENT_NAME__Props> = ({children}) => {
   return (
     <DemoBox>
       {children}
