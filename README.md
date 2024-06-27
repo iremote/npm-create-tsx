@@ -15,8 +15,13 @@ npm module to simplify react component files creation using templates
 
 ## publishing to npm
 
-1. `npm login`
-2. `npm publish --access public`
+```bash
+npm login
+```
+
+```bash
+npm publish --access public
+```
 
 ## removing from npm
 
