@@ -9,4 +9,10 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const __COMPONENT_NAME__Story: Story = {};
+const props: __COMPONENT_NAME__Props = {
+  children: "Hello World",
+};
+
+export const __COMPONENT_NAME__Story: Story = {
+  args: props
+};

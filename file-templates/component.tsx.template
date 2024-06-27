@@ -32,7 +32,6 @@ export const DemoBox = styled(Box)(({ theme }) => ({
   color: theme.palette.text.primary,
   padding: theme.spacing(2),
   borderRadius: theme.spacing(1),
-  boxShadow: theme.shadows[3],
   "& > *": {
     margin: theme.spacing(1),
   },
