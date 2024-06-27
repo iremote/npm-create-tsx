@@ -1,5 +1,4 @@
 import { ReactNode } from 'react';
-import { Locales, useLocales } from './useLocales';
 import Box from '@mui/material/Box';
 import styled from '@mui/system/styled';
 
@@ -8,10 +7,9 @@ export interface __COMPONENT_NAME__Props {
 }
 
 function __COMPONENT_NAME__({ children }: __COMPONENT_NAME__Props) {
-  const locales : Locales = useLocales();
   return (
     <DemoBox>
-      {locales.demo || ""} {children}
+      {children}
     </DemoBox>
   );
 }
@@ -28,8 +26,6 @@ export const DemoBox = styled(Box)(({ theme }) => ({
   justifyContent: "center",
   height: "100%",
   width: "100%",
-  backgroundColor: theme.palette.background.default,
-  color: theme.palette.text.primary,
   padding: theme.spacing(2),
   borderRadius: theme.spacing(1),
   "& > *": {
